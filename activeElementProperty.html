@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javasctip</title>
+</head>
+<body onclick="tombol()">
+    Please input <input type="text" name="input" id="nama" value="Input disini bro">
+    <button type="button">Submit</button>
+    <br>
+
+    <h3 id="ganti">Javascript</h3>
+
+    <script type="text/javascript">
+        function tombol(){
+            let a = document.activeElement.tagName;
+            document.getElementById("ganti").innerHTML = a;
+        }
+    </script>
+</body>
+</html>
