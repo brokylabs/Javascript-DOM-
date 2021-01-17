@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>
+    <style media="screen">
+        .warna {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" onclick=change() name="button">Change</button>
+    <button type="button" onclick=back() name="button">Set to Default</button>
+    <br>
+    <h1>Belajar Javascript DOM</h1>
+
+    <script type="text/javascript">
+        function change(){
+            let a = document.getElementsByTagName("h1")[0];
+            let b = document.createAttribute("class");
+            b.value = "warna";
+
+            a.attributes.setNamedItem(b);
+        }
+        function back(){
+            let a = document.getElementsByTagName("h1")[0];
+            let b = a.attributes.removeNamedItem("class")
+        }
+    </script>
+</body>
+</html>
