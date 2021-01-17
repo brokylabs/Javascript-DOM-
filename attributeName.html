@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>
+</head>
+<body>
+    <button type="button" onclick=tombol() name="button">Tombol</button>
+    <p id="contoh">Javascript</p>
+    
+    <script type="text/javascript">
+        function tombol(){
+            let a = document.getElementsByTagName("button")[0];
+            let b = a.attributes[2].name;
+
+            document.getElementById("contoh").innerHTML = b;
+        }
+    </script>
+</body>
+</html>
