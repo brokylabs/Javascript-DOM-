@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascrip DOM</title>
+</head>
+<body>
+    <a name="Bekasi" href="#">Kota Bekasi</a><br>
+    <a name="Jakarta" href="#">Kota Jakarta</a><br>
+    <a name="Purbalingga" href="#">Kota Purbalingga</a><br>
+    <a name="Jogja" href="#">Kota Jogja</a><br>
+    <a name="Klaten" href="#">Kota Klaten</a><br>
+
+    <p id="contoh">Achor</p>
+
+    <button type="button" onclick=count() name="button">Count</button>
+
+    <script type="text/javascript">
+        function count(){
+            let a = document.anchors.length;
+            document.getElementById("contoh").innerHTML = a;
+
+        }
+    </script>
+</body>
+</html>
