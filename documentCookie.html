@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>   
+</head>
+<body>
+    <button type="button" onclick=kuki()>KLIK</button>
+    <br>
+    <p id="contoh">Contoh</p>
+
+    <script type="text/javascript">
+        function kuki(){
+            document.cookie = "username=broky"; 
+            let a = document.cookie;
+            document.getElementById("contoh").innerHTML = "cookie = " + a;
+        }
+    </script>
+</body>
+</html>
