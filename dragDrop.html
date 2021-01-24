@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <style>
+            .droptarget {
+                float: left;
+                width: 100px;
+                height: 35px;
+                margin: 15px;
+                padding: 10px;
+                border: 1px solid #aaaaaa;
+            }
+        </style>
+    </head>
+    <body>
+        <p> Drag and Drop dua kkotak</p>
+
+        <div class="droptarget" ondrop=drop(event) ondragover=allowDrop(event) >
+            <p ondragstart=dragstart(event) ondrag=dragging(event) draggable="true" id="dragtarget" > Drag Me!</p>
+        </div>
+
+        <div class="droptarget" ondrop=drop(event) ondragover=allowDrop(event) >  </div>
+
+        <p id="object_txt"></p>
+
+        <script type="text/javascript" src="dragDrop.js"></script>
+    </body>
+</html>
