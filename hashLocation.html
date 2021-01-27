@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>
+</head>
+<body>
+    <h2>Hash Location</h2>
+
+    <p id="hash"></p>
+
+    <button onclick=hashLocation()> Location </button>
+    <button onclick=hashLocation2()> Location </button>
+    <button onclick=hashLocation3()> Location </button>
+
+
+    <script type="text/javascript">
+        function hashLocation(){
+            location.hash = "Bro1!";
+            let x = "Sekarang sedang disini " + location.hash;
+            document.getElementById("hash").innerHTML = x
+        }
+        function hashLocation2(){
+            location.hash = "Bro2!";
+            let x = "Sekarang sedang disini " + location.hash;
+            document.getElementById("hash").innerHTML = x
+        }
+        function hashLocation3(){
+            location.hash = "Bro3!";
+            let x = "Sekarang sedang disini " + location.hash;
+            document.getElementById("hash").innerHTML = x
+        }
+    </script>
+</body>
+</html>
