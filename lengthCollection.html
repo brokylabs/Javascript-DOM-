@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>
+</head>
+<body>
+    <h2>Belajar Length</h2>
+
+    <p>paragraf Pertma</p>
+    <p>Paragraf Kedua</p>
+    <p>Paragraf Ketiga</p>
+    <p>Paragraf Terakhir</p>
+
+    <button onclick=lengthCollection()>Alert</button>
+
+    <script type="text/javascript">
+        function lengthCollection(){
+            let x = document.getElementsByTagName("p")
+            for (let i = 0; i < x.length; i++) {
+                alert(x.item(i).innerHTML)
+                
+            }
+        }
+    </script>
+</body>
+</html>
