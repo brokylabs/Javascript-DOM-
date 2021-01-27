@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>
+</head>
+<body>
+    <h2>Belajar HTML Collection method</h2>
+
+    <p>Paragraf Pertama</p>
+    <p>Paragraf Kedua</p>
+    <p>Paragraf terakhir</p>
+
+    <button onclick=itemMethod()> Alert </button>
+
+    <script type="text/javascript">
+        function itemMethod(){
+            let x = document.getElementsByTagName("p")
+            alert(x.item(2).innerHTML)
+        }
+    </script>
+</body>
+</html>
