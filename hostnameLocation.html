@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar javascript DOM</title>
+</head>
+<body>
+    <h2>Hostname Location</h2>
+
+    <p id="hostname"> </p>
+
+    <button onclick=hostName()>Hostname</button>
+
+    <script type="text/javascript">
+        function hostName(){
+            let x = location.hostname;
+            document.getElementById("hostname").innerHTML = x;
+        }
+    </script>
+</body>
+</html>
