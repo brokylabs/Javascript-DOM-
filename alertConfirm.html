@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>
+</head>
+<body>
+    <h2>Alert Confirm</h2>
+
+    <p id="hasil"> </p>
+    <button onclick=confirmAlert()>Confirm</button>
+
+    <script type="text/javascript">
+        function confirmAlert(){
+            let alertText;
+            let x = confirm("Apakah anda yakin?")
+
+            if(x === true){
+                alertText = "Anda telah Yakin!"
+            }else{
+                alertText = "Anda tidak Yakin."
+            }
+
+            document.getElementById("hasil").innerHTML = alertText;
+        }
+    </script>
+</body>
+</html>
