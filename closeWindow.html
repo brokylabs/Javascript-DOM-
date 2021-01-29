@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>
+</head>
+<body>
+    <button onclick=openWin()>Open</button>
+    <button onclick=closeWin()>Close</button>
+    <script type="text/javascript">
+        let myWindow;
+        function openWin(){
+            myWindow = window.open("","Niomic","width=800, height=500")
+            myWindow.document.writer("Window telah terbuka")
+        }
+
+        function closeWin(){
+            myWindow.close();
+        }
+    </script>
+</body>
+</html>
