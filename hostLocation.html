@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javasxript DOM</title>
+</head>
+<body>
+    <h2>Host Location</h2>
+
+    <p id="host"> </p>
+
+    <button onclick=locHost()>Check Host Location</button>
+
+    <script type="text/javascript">
+    function locHost(){
+        let x = location.host;
+        document.getElementById("host").innerHTML = x;
+    }
+
+    </script>
+</body>
+</html>
