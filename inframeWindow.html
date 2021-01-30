@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript DOM</title>
+</head>
+<body>
+    <h2>Inframe Window</h2>
+
+    <button onclick=openFrame()>Open Link</button><br><br>
+
+    <iframe src="" width="400" height="400"></iframe>
+    <iframe src="" width="400" height="400"></iframe>
+
+    <script type="text/javascript">
+        function openFrame(){
+            window.frames[1].location = "https://www.niomic.com/";
+        }
+    </script>
+</body>
+</html>
